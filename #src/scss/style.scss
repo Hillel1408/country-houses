@@ -30,10 +30,21 @@ body {
     background-color: #d27b32;
     margin-bottom: 11px;
 }
+.btn {
+    padding: 10px 30px 10px 30px;
+    background: #d27b32;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 27 / 16 * 100%;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+}
 
 @import './sections/header';
 @import './sections/intro';
 @import './sections/services';
 @import './sections/projects';
 @import './sections/advantages';
+@import './sections/gallery';
+@import './sections/feedback';
 @import './sections/footer';
