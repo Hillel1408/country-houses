@@ -9,8 +9,30 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+.text {
+    color: white;
+    font-size: 16px;
+    line-height: 27 / 16 * 100%;
+    letter-spacing: 0.04em;
+}
+.title {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 46 / 50 * 100%;
+    color: white;
+}
+.bef-block:before {
+    content: '';
+    display: block;
+    width: 176px;
+    height: 4px;
+    background-color: #d27b32;
+    margin-bottom: 11px;
+}
 
 @import './sections/header';
 @import './sections/intro';
 @import './sections/services';
+@import './sections/projects';
 @import './sections/footer';
