@@ -1,10 +1,16 @@
 @import 'fonts';
 @import 'null';
 
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
 .container {
-    max-width: 1290px;
+    max-width: 1240px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
+@import './sections/header';
+@import './sections/intro';
+@import './sections/services';
 @import './sections/footer';

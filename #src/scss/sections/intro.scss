@@ -1,0 +1,26 @@
+.intro {
+    position: relative;
+    img {
+        width: 100%;
+    }
+    &__block {
+        top: 42px;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    &__title {
+        color: #17181a;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        font-size: 26px;
+        line-height: 32 / 26 * 100%;
+        padding: 8px;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.5);
+        width: fit-content;
+        text-shadow: 0px 4px 62px #e3e2e2, 0px 4px 135px #e3e2e2,
+            0px 4px 53px #e3e2e2, 0px 4px 54px #e3e2e2, 0px 4px 62px #e3e2e2,
+            0px 4px 54px #e3e2e2, 0px 4px 64px #e3e2e2, 0px 4px 22px #e3e2e2;
+    }
+}
