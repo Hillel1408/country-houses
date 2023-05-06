@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
 @font-face {
+    font-family: 'Gilroy-Bold';
+    font-display: swap;
+    src: url('../fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'icomoon';
     src: url('../fonts/icomoon.eot?gtfnwa');
     src: url('../fonts/icomoon.eot?gtfnwa#iefix') format('embedded-opentype'),
