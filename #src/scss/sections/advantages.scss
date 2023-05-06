@@ -1,0 +1,32 @@
+.advantages {
+    background-color: #17181a;
+    overflow: hidden;
+    &__grid {
+        display: grid;
+        padding: 114px 0;
+        position: relative;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 895px;
+        gap: 20px;
+
+        &:after {
+            content: url('../img/img-4.png');
+            mix-blend-mode: color-burn;
+            position: absolute;
+            top: 0;
+            right: -100%;
+            transform: translateX(-50%);
+        }
+    }
+    &__text {
+        color: #d8d8d8;
+    }
+    &__title {
+        font-size: 26px;
+        line-height: 32 / 26 * 100%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 14px;
+    }
+}
