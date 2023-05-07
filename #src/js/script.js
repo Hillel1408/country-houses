@@ -12,3 +12,16 @@ $(document).ready(function () {
         slidesToShow: 'auto',
     });
 });
+
+const popupBtn = document.querySelector('.popupBtn');
+const popup = document.querySelector('.popup');
+const popupClose = document.querySelector('.popup__close');
+
+popupBtn.addEventListener('click', function () {
+    popup.classList.toggle('open');
+    document.body.classList.toggle('lock');
+});
+popupClose.addEventListener('click', function () {
+    popup.classList.toggle('open');
+    document.body.classList.toggle('lock');
+});
