@@ -185,11 +185,17 @@
                 &::before {
                     content: url('../img/icon-1.png');
                 }
+                @media (max-width: 660px) {
+                    left: 5px;
+                }
             }
             .slick-next {
                 right: 20px;
                 &::before {
                     content: url('../img/icon-2.png');
+                }
+                @media (max-width: 660px) {
+                    right: 5px;
                 }
             }
         }
