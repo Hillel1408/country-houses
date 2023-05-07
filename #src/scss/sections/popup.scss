@@ -42,7 +42,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 30px 10px;
+        padding: 30px 40px;
         transition: all 0.8s ease 0s;
     }
     &__content {
@@ -51,6 +51,9 @@
         transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
         width: 1200px;
         background: #f3ecde;
+        @media (max-width: 1280px) {
+            width: 100%;
+        }
     }
     &__title {
         font-size: 26px;
@@ -76,10 +79,16 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        gap: 10px;
+        @media (max-width: 850px) {
+            width: 100%;
+        }
         &-flex {
             display: flex;
             align-items: center;
+            gap: 10px;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
         &-btn {
             font-size: 14px;
@@ -100,12 +109,20 @@
         margin-bottom: 18px;
         display: flex;
         gap: 20 / 1200 * 100%;
+        @media (max-width: 850px) {
+            flex-direction: column;
+            gap: 20px;
+        }
     }
     &__slider {
         width: 758 / 1200 * 100%;
         display: flex;
         gap: 20 / 758 * 100%;
         height: 288px;
+        @media (max-width: 850px) {
+            width: 100%;
+            gap: 20px;
+        }
         &-big {
             width: 570 / 758 * 100%;
             background-color: white;
@@ -180,6 +197,7 @@
             display: flex;
             justify-content: space-between;
             border-bottom: 1px solid #d8d8d8;
+            gap: 10px;
             p {
                 font-weight: 700;
                 font-size: 16px;
@@ -200,10 +218,16 @@
         display: grid;
         grid-template-columns: 2fr 2fr 1.2fr;
         gap: 20px;
+        @media (max-width: 970px) {
+            grid-template-columns: 1fr 1fr;
+        }
         &-two {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
+            @media (max-width: 970px) {
+                grid-template-columns: 1fr;
+            }
         }
     }
     &__compound {
