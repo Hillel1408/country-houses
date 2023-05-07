@@ -60,12 +60,21 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
     }
+    &__subtitle {
+        font-size: 12px;
+        line-height: 12px;
+        color: #949494;
+        letter-spacing: 0.04em;
+        margin-bottom: 4px;
+        display: block;
+    }
     &__price {
         width: 422 / 1200 * 100%;
         padding: 20px;
         background-color: white;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         &-flex {
             display: flex;
             align-items: center;
@@ -83,13 +92,6 @@
             font-family: 'Gilroy-Bold', sans-serif;
             display: flex;
             flex-direction: column;
-            span {
-                font-size: 12px;
-                line-height: 12px;
-                color: #949494;
-                letter-spacing: 0.04em;
-                margin-bottom: 4px;
-            }
         }
     }
     &__flex {
@@ -169,6 +171,26 @@
                     height: 91px;
                     object-fit: cover;
                 }
+            }
+        }
+    }
+    &__block {
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #d8d8d8;
+            p {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 27px;
+                color: #292b2d;
+                font-family: 'Gilroy-Bold', sans-serif;
+            }
+            span {
+                font-size: 14px;
+                line-height: 27px;
+                letter-spacing: 0.04em;
+                color: #292b2d;
             }
         }
     }
