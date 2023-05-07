@@ -17,6 +17,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
+        @media (max-width: 575px) {
+            grid-template-columns: 1fr;
+        }
     }
     &__grid {
         display: grid;
@@ -31,8 +34,19 @@
             flex-direction: column;
             justify-content: end;
             background: #292b2d;
+            @media (max-width: 575px) {
+                padding: 10px 17px 30px 17px;
+            }
             .services__grid-text {
                 position: initial;
+            }
+        }
+        & > div:first-child {
+            @media (max-width: 575px) {
+                height: 272px;
+                .services__grid-wrapper {
+                    height: 100%;
+                }
             }
         }
         &-wrapper {
@@ -48,6 +62,10 @@
             bottom: 31px;
             left: 31px;
             right: 31px;
+            @media (max-width: 575px) {
+                left: 17px;
+                right: 17px;
+            }
         }
         & > div {
             position: relative;
