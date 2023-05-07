@@ -1,9 +1,16 @@
 .footer {
     background: #161718;
     padding: 116px 0 108px 0;
+    @media (max-width: 744px) {
+        padding: 44px 0 85px 0;
+    }
     &__list {
         display: flex;
         margin-left: -12px;
+        @media (max-width: 880px) {
+            flex-direction: column;
+            gap: 35px;
+        }
         &-link {
             padding: 12px;
             font-size: 16px;
@@ -15,6 +22,11 @@
     &__container {
         display: flex;
         justify-content: space-between;
+        gap: 55px;
+        align-items: center;
+        @media (max-width: 880px) {
+            align-items: flex-end;
+        }
     }
     &__tel {
         display: flex;
@@ -26,11 +38,32 @@
         &:before {
             color: #d27b32;
         }
+        img {
+            display: none;
+        }
+        @media (max-width: 1060px) {
+            font-size: 0;
+            img {
+                display: block;
+            }
+        }
     }
     &__flex {
         display: flex;
         align-items: center;
         gap: 27px;
+        @media (max-width: 880px) {
+            align-items: flex-end;
+        }
+        & > p {
+            a {
+                display: none;
+                @media (max-width: 880px) {
+                    display: block;
+                    margin-bottom: 13px;
+                }
+            }
+        }
     }
     &__social {
         display: flex;
@@ -39,6 +72,9 @@
         a:before {
             font-size: 30px;
             color: white;
+            @media (max-width: 880px) {
+                font-size: 52px;
+            }
         }
     }
 }

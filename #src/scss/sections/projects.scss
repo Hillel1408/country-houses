@@ -20,8 +20,13 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
+            @media (max-width: 744px) {
+                grid-template-columns: 1fr;
+            }
         }
         &__item {
+            display: flex;
+            flex-direction: column;
             img {
                 width: 100%;
                 height: 352px;
@@ -30,16 +35,22 @@
             &-content {
                 padding: 41px 48px 33px 48px;
                 background: #292b2d;
+                flex: 1 1 auto;
+                display: flex;
+                flex-direction: column;
             }
             &-text {
                 color: #d8d8d8;
+                margin-top: auto;
             }
             &-flex {
                 display: flex;
-                gap: 31px;
+                gap: 10px;
                 align-items: center;
                 margin-bottom: 16px;
                 justify-content: space-between;
+                flex-wrap: wrap;
+
                 h2 {
                     font-size: 26px;
                     line-height: 27 / 26 * 100%;

@@ -8,7 +8,9 @@
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 895px;
         gap: 20px;
-
+        @media (max-width: 744px) {
+            grid-template-columns: 1fr;
+        }
         &:after {
             content: url('../img/img-4.png');
             mix-blend-mode: color-burn;
@@ -16,6 +18,20 @@
             top: 0;
             right: -100%;
             transform: translateX(-50%);
+            @media (max-width: 744px) {
+                display: none;
+            }
+        }
+        &:before {
+            content: url('../img/img-19.png');
+            display: none;
+            @media (max-width: 744px) {
+                display: block;
+                mix-blend-mode: color-burn;
+                position: absolute;
+                top: 0;
+                transform: translateX(45%);
+            }
         }
     }
     &__text {
