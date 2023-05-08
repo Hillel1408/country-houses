@@ -6,14 +6,29 @@
         justify-content: space-between;
         align-items: center;
     }
+    &__flex {
+        @media (max-width: 744px) {
+            margin-bottom: 157px;
+            display: flex;
+            gap: 53px;
+        }
+    }
     &__list {
         display: flex;
+        @media (max-width: 744px) {
+            flex-direction: column;
+            gap: 35px;
+        }
         &-link {
             padding: 12px;
             font-size: 16px;
             line-height: 28 / 16 * 100%;
             color: white;
             text-transform: uppercase;
+            @media (max-width: 744px) {
+                text-decoration: underline;
+                padding-left: 0;
+            }
         }
     }
     &__tel {
@@ -25,6 +40,67 @@
         line-height: 28 / 16 * 100%;
         &:before {
             color: #d27b32;
+        }
+    }
+    &__feedback {
+        display: none !important;
+        @media (max-width: 744px) {
+            display: flex !important;
+        }
+    }
+    &__contacts {
+        display: none;
+        @media (max-width: 744px) {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        &-tel {
+            margin-left: auto;
+        }
+    }
+    &__nav {
+        position: relative;
+        @media (max-width: 744px) {
+            transform: translate(0px, -100%);
+            transition: transform 0.8s ease 0s;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: auto;
+            background-color: #161718;
+            z-index: 1;
+            padding: 135px 20px 20px 20px;
+            &.active {
+                transform: translate(0px, 0%);
+            }
+        }
+        &-icon {
+            display: none;
+            @media (max-width: 744px) {
+                display: block;
+                position: absolute;
+                top: 22px;
+                left: 30px;
+            }
+        }
+    }
+    &__social {
+        display: flex;
+        gap: 20px;
+        a:before {
+            font-size: 52px;
+            color: white;
+        }
+    }
+    &__btn {
+        display: none;
+        @media (max-width: 744px) {
+            display: block;
+            order: -1;
         }
     }
 }
