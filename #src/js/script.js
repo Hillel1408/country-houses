@@ -39,3 +39,11 @@ headerCloseBtn.addEventListener('click', function () {
     headerNav.classList.toggle('active');
     document.body.classList.toggle('lock');
 });
+
+const headerNavLinks = document.querySelectorAll('.header__list-link');
+headerNavLinks.forEach((item) => {
+    item.addEventListener('click', () => {
+        headerNav.classList.toggle('active');
+        document.body.classList.remove('lock');
+    });
+});
