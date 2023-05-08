@@ -443,6 +443,7 @@ html {
 
 .intro {
   position: relative;
+  overflow: hidden;
 }
 .intro img {
   width: 100%;
