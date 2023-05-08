@@ -27,9 +27,9 @@ popupClose.addEventListener('click', function () {
     document.body.classList.toggle('lock');
 });
 
-const headerBtn = document.querySelector('.header__btn');
+const headerBtn = document.querySelector('.header__btn img');
 const headerNav = document.querySelector('.header__nav');
-const headerCloseBtn = document.querySelector('.header__nav-icon');
+const headerCloseBtn = document.querySelector('.header__nav-icon img');
 
 headerBtn.addEventListener('click', function () {
     headerNav.classList.toggle('active');
