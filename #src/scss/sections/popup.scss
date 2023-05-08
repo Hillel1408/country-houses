@@ -183,7 +183,7 @@
             .slick-prev {
                 left: 20px;
                 &::before {
-                    content: url('../img/icon-1.png');
+                    content: url('../img/icon-1.svg');
                 }
                 @media (max-width: 660px) {
                     left: 5px;
@@ -192,7 +192,7 @@
             .slick-next {
                 right: 20px;
                 &::before {
-                    content: url('../img/icon-2.png');
+                    content: url('../img/icon-2.svg');
                 }
                 @media (max-width: 660px) {
                     right: 5px;
