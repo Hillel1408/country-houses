@@ -25,3 +25,17 @@ popupClose.addEventListener('click', function () {
     popup.classList.toggle('open');
     document.body.classList.toggle('lock');
 });
+
+const headerBtn = document.querySelector('.header__btn');
+const headerNav = document.querySelector('.header__nav');
+const headerCloseBtn = document.querySelector('.header__nav-icon');
+
+headerBtn.addEventListener('click', function () {
+    headerNav.classList.toggle('active');
+    document.body.classList.toggle('lock');
+});
+
+headerCloseBtn.addEventListener('click', function () {
+    headerNav.classList.toggle('active');
+    document.body.classList.toggle('lock');
+});
