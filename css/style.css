@@ -1461,7 +1461,7 @@ html {
   left: 20px;
 }
 .popup__slider-big .slick-prev::before {
-  content: url("../img/icon-1.png");
+  content: url("../img/icon-1.svg");
 }
 @media (max-width: 660px) {
   .popup__slider-big .slick-prev {
@@ -1472,7 +1472,7 @@ html {
   right: 20px;
 }
 .popup__slider-big .slick-next::before {
-  content: url("../img/icon-2.png");
+  content: url("../img/icon-2.svg");
 }
 @media (max-width: 660px) {
   .popup__slider-big .slick-next {
