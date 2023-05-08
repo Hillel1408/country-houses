@@ -10,7 +10,7 @@ $(document).ready(function () {
         arrows: false,
         dots: false,
         slidesToShow: 'auto',
-        allowTouchMove: false,
+        swipe: false,
     });
 });
 
